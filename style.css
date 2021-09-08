@@ -1,0 +1,167 @@
+*{
+  margin: 40;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+body{
+  display :flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: lavenderblush;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.label h1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.left,right,form{
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  align-items: center;
+  justify-content: center;
+}
+
+.left{
+  width: 500px;
+  align-items: flex-start;
+}
+
+.container h1{
+  font-family: "facebook leter faces";
+  font-size: 60px;
+  color: white;
+  background-color: black;
+  text-align: right;
+}
+
+.left p{
+  font-size: 30px;
+  color: blue;
+  height: 200px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.right{
+  width: 400px;
+}
+
+form{
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+form input{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  outline: none;
+  font-size:16px;
+}
+
+.loginBtn{
+  background-color: #FFB6C1;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Arial';
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.loginBtn:hover{
+  background-color: #FFB6C1;
+}
+.div{
+  display: flex;
+  padding: 70px;
+}
+
+div button {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.forget{
+  margin: 15px 0;
+  text-decoration: none;
+  color: #1877f2;
+  font-family: 'Arial';
+  font-size: 14px;
+}
+
+.sign-up{
+  padding-top: 20px;
+  border-top: 1px solid #999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signupBtn{
+  background-color: #DB7093;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Arial';
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.signupBtn:hover{
+  background-color: #DB7093;
+}
+
+.right p{
+  font-family: 'Arial';
+  font-size: 15px;
+}
+
+@media(max-width:950px){
+  .container{
+    flex-direction: column;
+  }
+  
+  .left{
+    width: 400px;
+    align-content: center;
+    align-items: center;
+  }
+  .left p{
+    height: 75px;
+  }
+}
